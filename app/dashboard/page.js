@@ -80,7 +80,7 @@ export default function Dashboard() {
                 setTasks(sorted);
             }
         } catch (err) {
-            console.error('Failed to fetch tasks');
+            console.error('Failed to fetch tasks:', err);
         }
     };
 
