@@ -1,0 +1,165 @@
+{
+  "users": [
+    {
+      "id": "4947ed38-a141-4dfb-b00a-4208e92401aa",
+      "username": "Shubham",
+      "password": "Shubham@12"
+    },
+    {
+      "id": "464204c5-1cd9-4b82-a603-21a6a30ef48c",
+      "username": "Subham",
+      "password": "12345678",
+      "email": "shubhamagrahari7584@gmail.com",
+      "phone": "7985253577"
+    },
+    {
+      "id": "b29cd8ae-46ec-4859-b172-ce5df2a77095",
+      "username": "Diwakar",
+      "password": "Diwakar@789",
+      "email": "dsdon840@gmail.com",
+      "phone": "1234567890"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "f0d6268f-aa93-484e-84da-ccd7ea543a9d",
+      "userId": "4947ed38-a141-4dfb-b00a-4208e92401aa",
+      "title": "Dsa",
+      "subject": "Array,String",
+      "date": "2025-12-24",
+      "time": "All Day",
+      "isEvent": false,
+      "status": "pending",
+      "createdAt": "2025-12-24T06:56:24.262Z",
+      "progress": 0
+    },
+    {
+      "id": "30c44060-b8c9-412f-a475-754ad05d6d8b",
+      "userId": "4947ed38-a141-4dfb-b00a-4208e92401aa",
+      "title": "webded",
+      "subject": "js",
+      "date": "2025-12-24",
+      "time": "11:23",
+      "isEvent": false,
+      "status": "completed",
+      "createdAt": "2025-12-24T07:11:58.500Z",
+      "progress": 100
+    },
+    {
+      "id": "586207d9-3244-47cd-ab42-0a56a72a322f",
+      "userId": "4947ed38-a141-4dfb-b00a-4208e92401aa",
+      "title": "ed",
+      "subject": "faded",
+      "date": "2025-12-24",
+      "startTime": "15:02",
+      "endTime": "21:02",
+      "isEvent": false,
+      "status": "in-progress",
+      "progress": 90,
+      "createdAt": "2025-12-24T08:59:03.282Z"
+    },
+    {
+      "id": "e44a6dc0-97ea-4864-84db-cf2dda137233",
+      "userId": "4947ed38-a141-4dfb-b00a-4208e92401aa",
+      "title": "d3e",
+      "subject": "edify",
+      "date": "2025-12-24",
+      "startTime": "13:02",
+      "endTime": "17:04",
+      "isEvent": false,
+      "status": "completed",
+      "progress": 100,
+      "createdAt": "2025-12-24T09:08:52.378Z"
+    },
+    {
+      "id": "6e2f863b-5a28-4ba6-a978-d25040c320eb",
+      "userId": "b29cd8ae-46ec-4859-b172-ce5df2a77095",
+      "title": " rn 3mnr",
+      "subject": "rb3knf",
+      "date": "2025-12-26",
+      "startTime": "12:06",
+      "endTime": "23:40",
+      "isEvent": false,
+      "status": "in-progress",
+      "progress": 10,
+      "createdAt": "2025-12-26T16:34:51.683Z"
+    },
+    {
+      "id": "c529b48b-886b-4515-aa95-1b87e5b0ac64",
+      "userId": "b29cd8ae-46ec-4859-b172-ce5df2a77095",
+      "title": "dhwbdwn",
+      "subject": "wjhbdkewjn",
+      "date": "2025-12-26",
+      "startTime": "21:03",
+      "endTime": "22:06",
+      "isEvent": false,
+      "status": "in-progress",
+      "progress": 10,
+      "createdAt": "2025-12-26T16:35:19.266Z"
+    },
+    {
+      "id": "eb3b7430-ba4a-4419-b57e-bca281b62c52",
+      "userId": "b29cd8ae-46ec-4859-b172-ce5df2a77095",
+      "title": "r4t6y6",
+      "subject": "r4t5g",
+      "date": "2025-12-26",
+      "startTime": "22:01",
+      "endTime": "22:10",
+      "isEvent": false,
+      "status": "completed",
+      "progress": 100,
+      "createdAt": "2025-12-26T16:46:25.210Z"
+    },
+    {
+      "id": "c1916c74-c09a-4c94-9c38-f9f31a59a49b",
+      "userId": "b29cd8ae-46ec-4859-b172-ce5df2a77095",
+      "title": "gvvhb",
+      "subject": "gvhbj",
+      "date": "2025-12-26",
+      "startTime": "23:01",
+      "endTime": "23:30",
+      "isEvent": false,
+      "status": "completed",
+      "progress": 100,
+      "createdAt": "2025-12-26T16:51:20.893Z"
+    },
+    {
+      "id": "7c3c2107-7592-44c5-beb2-b9dd9074bff5",
+      "userId": "b29cd8ae-46ec-4859-b172-ce5df2a77095",
+      "title": "rftgyh",
+      "subject": "gvbhnj",
+      "date": "2025-12-26",
+      "startTime": "09:00",
+      "endTime": "10:00",
+      "isEvent": false,
+      "status": "completed",
+      "progress": 100,
+      "createdAt": "2025-12-26T17:04:47.317Z"
+    },
+    {
+      "id": "b150d29e-d689-447d-b4a5-20515da97fae",
+      "userId": "b29cd8ae-46ec-4859-b172-ce5df2a77095",
+      "title": "dfcvgbhn",
+      "subject": "fcvgbhnj",
+      "date": "2025-12-26",
+      "startTime": "22:40",
+      "endTime": "23:01",
+      "isEvent": false,
+      "status": "completed",
+      "progress": 100,
+      "createdAt": "2025-12-26T17:05:46.624Z"
+    }
+  ],
+  "otps": [
+    {
+      "identifier": "Shubhamagrahari7584@gmail.com",
+      "code": "324471",
+      "expiry": 1766752392630
+    },
+    {
+      "identifier": "shubhamagrahari7584@gmai.com",
+      "code": "246586",
+      "expiry": 1766751784233
+    }
+  ]
+}

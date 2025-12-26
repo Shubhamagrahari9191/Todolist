@@ -1,0 +1,35 @@
+.analytics-section {
+    padding-bottom: 2rem;
+}
+
+.sleep-section {
+    position: relative;
+}
+
+.sleep-input-row {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.mini-input {
+    width: 50px;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--border);
+    color: white;
+    font-size: 0.8rem;
+    padding: 0.2rem;
+    border-radius: 4px;
+}
+
+.mini-btn {
+    font-size: 0.7rem;
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
