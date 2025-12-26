@@ -176,7 +176,7 @@ export default function Dashboard() {
                             onClick={() => setViewMode('planner')}
                         >Planner</button>
                     </div>
-                    <button onClick={() => generatePDF(tasks, user.username)} className="btn btn-secondary hide-mobile">
+                    <button onClick={() => generatePDF(tasks, user.username)} className="btn btn-secondary">
                         PDF
                     </button>
                     <button onClick={() => {
