@@ -47,7 +47,7 @@ export default function LoginPage() {
                     const data = await res.json();
                     if (!res.ok) throw new Error(data.error);
 
-                    setSuccess('OTP sent for password reset. Check console.');
+                    setSuccess('OTP sent! Please check your email inbox and Spam folder (or check the developer console).');
                     setOtpStep(2);
 
                 } else {
@@ -83,7 +83,7 @@ export default function LoginPage() {
                     const data = await res.json();
                     if (!res.ok) throw new Error(data.error);
 
-                    setSuccess('OTP sent for verification. Check console.');
+                    setSuccess('OTP sent! Please check your email inbox and Spam folder (or check the developer console).');
                     setOtpStep(2);
                 } else {
                     // Verify OTP & Register

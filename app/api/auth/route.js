@@ -32,7 +32,9 @@ export async function POST(request) {
         if (targetIdentifier.includes('@') && process.env.EMAIL_USER && process.env.EMAIL_PASS) {
             try {
                 const transporter = nodemailer.createTransport({
-                    service: 'gmail',
+                    host: 'smtp.gmail.com',
+                    port: 465,
+                    secure: true,
                     auth: {
                         user: process.env.EMAIL_USER,
                         pass: process.env.EMAIL_PASS,
@@ -40,11 +42,25 @@ export async function POST(request) {
                 });
 
                 await transporter.sendMail({
-                    from: process.env.EMAIL_USER,
+                    from: `"Premium Todo List" <${process.env.EMAIL_USER}>`,
                     to: targetIdentifier,
-                    subject: 'Your OTP Code',
-                    text: `Your OTP code is: ${code}. It expires in 5 minutes.`,
-                    html: `<p>Your OTP code is: <strong>${code}</strong></p><p>It expires in 5 minutes.</p>`
+                    subject: `${code} is your Premium Todo List verification code`,
+                    text: `Your verification code is: ${code}. It expires in 5 minutes.`,
+                    html: `
+                        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #e0e0e0; border-radius: 8px;">
+                            <h2 style="color: #4f46e5; text-align: center;">Premium Todo List</h2>
+                            <p>Hello,</p>
+                            <p>Thank you for using Premium Todo List. Please use the verification code below to complete your action. This code is valid for 5 minutes.</p>
+                            <div style="text-align: center; margin: 30px 0;">
+                                <span style="font-size: 32px; font-weight: bold; letter-spacing: 5px; color: #4f46e5; background-color: #f5f3ff; padding: 10px 20px; border-radius: 5px; border: 1px dashed #c084fc;">
+                                    ${code}
+                                </span>
+                            </div>
+                            <p style="font-size: 12px; color: #6b7280; text-align: center; margin-top: 30px;">
+                                If you did not request this code, please ignore this email.
+                            </p>
+                        </div>
+                    `
                 });
                 console.log(`[EMAIL SENT] OTP sent to ${targetIdentifier}`);
             } catch (emailError) {
